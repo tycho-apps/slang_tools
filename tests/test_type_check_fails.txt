@@ -1,0 +1,13 @@
+void f(int a)
+{
+}
+struct foo
+{
+	int a;
+};
+void g()
+{
+	foo bar;
+	f(bar);
+}
+//--

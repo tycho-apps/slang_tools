@@ -1,0 +1,324 @@
+void foo(matrix<int, 4,4> a[4])
+{
+}
+//--
+matrix<int, 4,4> a;
+vector<int, 4> b;
+//--
+void foo(int a[4])
+{
+}
+//--
+void foo()
+{
+	int f[4];
+	f[0] = 0;
+}
+//--
+int i = (float)0.0;
+//--
+int i = (int)0.0;
+//--
+void f()
+{
+	float f; 
+	int a;
+	(1) ? f : a;
+}
+//--
+struct foo
+{};
+void f()
+{
+	foo s, t;
+	(1) ? s : t;
+}
+//--
+void f()
+{
+	float s;
+	(1) ? s : 1.0;
+}
+//--
+void f1()
+{
+	double f;
+	++f;
+}
+//--
+void f1()
+{
+	bool f;
+	++f;
+}
+//--
+void f1()
+{
+	float f;
+	++f;
+}
+//--
+void f1()
+{
+	uint f;
+	++f;
+}
+//--
+void f1()
+{
+	int f;
+	++f;
+}
+//--
+void f()
+{
+	int i;
+	for(int j = 0; j < 3; ++j)
+		++i;
+}
+//--
+void f()
+{
+	int i;
+	while(1)
+		++i;
+}
+//--
+void f()
+{
+	int i;
+	do
+	{
+	}while(1);
+}
+//--
+void f()
+{
+	int i;
+	if(1)
+		++i;
+}
+//--
+struct foo
+{
+	int a;
+} foo_t;
+
+void  func()
+{
+	foo_t.a = 0;
+}
+//--
+void foo()
+{
+}
+//--
+int foo()
+{
+}
+//--
+void foo(int a)
+{
+}
+//-- 
+void foo(int i, int j)
+{
+}
+//--
+struct foo
+{
+	int i;
+};
+void bar(foo f)
+{
+	f.i = 0;
+}
+//--
+typedef int mytype;
+mytype foo;
+//--
+typedef const int foo;
+//--
+texture g_MeshTexture;
+sampler MeshTextureSampler = 
+sampler_state
+{
+    Texture = <g_MeshTexture>;
+    MipFilter = LINEAR;
+    MinFilter = LINEAR;
+    MagFilter = LINEAR;
+};
+//--
+cbuffer cfoo
+{
+	int a;
+	float b;
+};
+
+int foo(in float baa : foo, out int laa)
+{
+	int l = 0;
+	int k = (l == 1) ? 2+1 : 3*2;
+	float boo[10];
+	int i = 0;
+	int y = 0;
+	i = i * k / 2;
+	y = (i + 2) * 3;
+	do
+	{
+		++i;
+	} while(i == 0);
+	for(int j = 0; j < 3 && y == 2; ++j)
+	{}
+	if(i == 0)
+		++i;
+	else
+		--i;
+	if(i == 1)
+		++i; 
+		
+	return foo(i,2);
+}
+typedef const int fool, baa;
+const baa boo;
+fool boo2;	
+
+struct foo2
+{
+	int a;
+	float b,c;
+	int d[5][4];
+};
+//--
+typedef const int foo;
+//--
+typedef row_major int foo;
+//--
+typedef column_major int foo;
+//--
+typedef const row_major column_major int foo;
+//--
+typedef int foo, foo2;
+typedef int foo3;
+//--
+void func()
+{
+	struct foo {};
+	foo bar;
+}
+//--
+void func()
+{
+	for(;;)
+	{
+		typedef int foo;
+		foo bar;
+	}
+}
+//--
+struct boo {}; void foo(boo bah) {}
+//--
+typedef int mytype;
+mytype foo;
+//--
+void func() { }
+//--
+struct foo { };
+//--
+void foo() { int i; if(i == 0) {} }
+//--
+void foo() { for(int a; a;) {} }
+//--
+void foo() { for(int a = 0; a < 10; ++a) {} }
+//--
+int a=0;
+//--
+void foo() {}
+//--
+void foo();
+//--
+struct foo{};
+//--
+struct foo{ int a; };
+//--
+;;
+//--
+const int a = 0;
+//--
+struct bob { int foo; }; void foo(int a) { return; }
+//--
+int foo() { return 0; }
+//--
+int foo() { struct bah {}; }
+//--
+void foo(int bah, string bah) {}
+//--
+int foo(int a) { a *= 2; }
+//--
+int foo(int a) { a -= 2; }
+//--
+int foo(int a) { a += 2; }
+//--
+int foo(int a) { a /= 2; }
+//--
+int foo(int a) { a %= 2; }
+//--
+int foo(int a) { a != 2; }
+//--
+int foo(int a) { a == 2; }
+//--
+int foo(int a) { a <= 2; }
+//--
+int foo(int a) { a >= 2; }
+//--
+// hello
+int foo;
+//--
+/* hello */
+int foo;
+//-- 
+/* hello
+   foo
+ */
+int foo;
+//--
+int a = false ? 1 : 2;
+//--
+int b;
+int a = false ? 1 : b;
+//--
+int b;
+int a = false ? b : 1;
+//--
+void RenderScenePS() {}
+void RenderSceneVS() {}
+// technique10 RenderSceneWithTexture1Light
+// {
+//     pass P0
+//     {
+//         SetVertexShader(CompileShader(vs_4_0, RenderSceneVS()));
+//         SetGeometryShader(NULL);
+//         SetPixelShader(CompileShader(ps_4_0, RenderScenePS()));
+//     }
+// }
+//--
+int i;
+void foo()
+{
+	int i;
+}
+//--
+struct foo {};
+foo f(int a)
+{}
+//--
+struct foo
+{
+	int bar;
+};
+void func()
+{
+	foo f;
+	f.bar = 3;
+}
+//--

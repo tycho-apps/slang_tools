@@ -1,0 +1,214 @@
+void foo(int [4])
+{
+}
+//--
+int a;
+matrix<int, a+3, 4> foo;
+//--
+void f()
+{
+	float f; 
+	matrix<float, 4,4> m;
+	(1) ? f : m;
+}
+//--
+struct foo
+{
+};
+void f()
+{
+	foo s;
+	(1) ? s : 1.0;
+}
+//--
+void f()
+{
+	for(int j = 0; j < 5; ++j)
+	{
+		int j = 1;
+	}
+}
+//--
+int f1()
+{
+	return;
+}
+//--
+void f1()
+{
+	return 1;
+}
+//--
+void f1()
+{
+}
+void f2()
+{
+	return f1();
+}
+//--
+void f(float v)
+{}
+void f(int v)
+{}
+void g()
+{
+	double d;
+	f(d);
+}
+//--
+texture1d t1, t2;
+void f()
+{
+	t1<t2;
+}
+//--
+texture1d t1, t2;
+void f()
+{
+	t1+t2;
+}
+//--
+struct foo
+{
+	int bar;
+};
+void func()
+{
+	foo f;
+	f.barr = 3;
+}
+//--
+void f()
+{
+	float f = 1;
+}
+//--
+struct foo {};
+void f(int foo)
+{}
+//--
+struct boo
+{
+	int bar;
+};
+struct foo
+{
+	boo b;
+};
+void func()
+{
+	foo f;
+	f.b.barr = 3;
+}
+//--
+int i;
+int i;
+//--
+void func()
+{
+for(int i = 0; i < 10; ++i)
+{}
+i = 4;
+}
+//--
+4;
+//--
+4+5
+//--
+4.5+5.5-12+91-2;
+//--
+struct bob {}
+//--
+void foo() { if(int == 0) {} }
+//--
+mytype foo;
+//--
+void func() 
+{
+	typedef int mytype;
+	mytype foo;
+};
+mytype foo;
+//--
+struct foo
+{
+	typedef int bar;
+	bar boo;
+};
+bar boo;
+//--
+void func() 
+{
+	typedef int mytype;
+	mytype foo;
+}
+mytype foo;
+//--
+struct foo
+{
+	struct bar
+	{
+	};
+};
+//--
+void func()
+{
+	for(;;)
+	{
+		typedef int foo;
+		foo bar;
+	}
+	foo bar;
+}
+//--
+void RenderScenePS() {}
+void RenderSceneVS() {}
+technique10 RenderSceneWithTexture1Light
+{
+    pass P0
+    {
+        SetVertexShader(CompileShader(xs_4_0, RenderSceneVS()));
+        SetGeometryShader(NULL);
+        SetPixelShader(CompileShader(ps_4_0, RenderScenePS()));
+    }
+}
+//--
+void RenderScenePS() {}
+void RenderSceneVS() {}
+technique10 RenderSceneWithTexture1Light
+{
+    pass P0
+    {
+        SetVertexShader(CompileShader(ps_4_0, RenderSceneVS_XX()));
+        SetGeometryShader(NULL);
+        SetPixelShader(CompileShader(ps_4_0, RenderScenePS()));
+    }
+}
+//--
+void RenderScenePS() {}
+void RenderSceneVS() {}
+technique10 RenderSceneWithTexture1Light
+{
+    pass P0
+    {
+        SetVertexShader(CompileShader(ps_4_0, RenderSceneVS()));
+        SetGeometryShader(NULL);
+        SetPixelShader(CompileShader(ps_4_0, RenderScenePS_XX()));
+    }
+}
+//--
+void NoSuchFunction() {}
+technique10 RenderSceneWithTexture1Light
+{
+    pass P0
+    {
+        NoSuchFunction(NULL);
+    }
+}
+//--
+void func()
+{
+	foo();
+}
+//--
